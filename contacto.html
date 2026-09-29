@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Kabanna</title>
+    
+    <!-- Bootstrap 5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="contacto-styles.css">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!-- <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-burger"></i> Contacto
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informacion_interes.html">Información</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <i class="fas fa-headset"></i> Contacto
+            </h1>
+            <p class="hero-subtitle">¡Nos encantaría saber de ti! Ponte en contacto con nosotros</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE INFORMACIÓN DE CONTACTO CON CARDS -->
+    <section class="contact-info-section">
+        <div class="container-fluid">
+            <h2 class="section-title">Información de Contacto</h2>
+            <div class="row g-4">
+                <!-- CARD - TELÉFONO -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Teléfono</h3>
+                        <p class="contact-info-text">Llamadas y WhatsApp</p>
+                        <a href="tel:+573001234567" class="contact-link">
+                            +57 301 441 2498
+                        </a>
+                        <a href="tel:+573009876543" class="contact-link">
+                            +57 301 441 2498
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD - EMAIL -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Correo Electrónico</h3>
+                        <p class="contact-info-text">Envíanos un mensaje</p>
+                        <a href="mailto:kabannaresttobar@gmail.com" class="contact-link">
+                            kabannaresttobar@gmail.com
+                        </a>
+                        <a href="mailto:kabannarestobar@gmail.com" class="contact-link">
+                            kabannarestobar@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD - UBICACIÓN -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Ubicación</h3>
+                        <p class="contact-info-text">Visitanos en</p>
+                        <p class="location-text">Cra 50 # 25-45<br>Chinú, Córdoba</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mapModal">
+                            <i class="fas fa-map"></i> Ver Mapa
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE REDES SOCIALES CON GRID -->
+    <section class="social-section">
+        <div class="container-fluid">
+            <h2 class="section-title">Síguenos en Redes Sociales</h2>
+            <div class="social-grid">
+                <a href="https://www.facebook.com/foodcart" target="_blank" rel="noopener noreferrer" class="social-card facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/foodcart" target="_blank" rel="noopener noreferrer" class="social-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.twitter.com/foodcart" target="_blank" rel="noopener noreferrer" class="social-card twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://wa.me/573014412498?text=Hola%20Kabanna" target="_blank" rel="noopener noreferrer" class="social-card whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://www.tiktok.com/@foodcart" target="_blank" rel="noopener noreferrer" class="social-card tiktok">
+                    <i class="fab fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://www.youtube.com/@foodcart" target="_blank" rel="noopener noreferrer" class="social-card youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAROUSEL DE IMÁGENES -->
+    <section class="carousel-section">
+        <div class="container-fluid">
+            <h2 class="section-title">Galería de Nuestro Local</h2>
+            <div class="carousel-wrapper">
+                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #ff8c00 0%, #e67e00 100%); display: flex; align-items: center; justify-content: center;">
+                                <div class="text-center text-white">
+                                    <i class="fas fa-burger" style="font-size: 5rem; margin-bottom: 1rem;"></i>
+                                    <h5>Hamburguesas Deliciosas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); display: flex; align-items: center; justify-content: center;">
+                                <div class="text-center text-white">
+                                    <i class="fas fa-hotdog" style="font-size: 5rem; margin-bottom: 1rem;"></i>
+                                    <h5>Perros Calientes Especiales</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #ffd93d 0%, #ffb700 100%); display: flex; align-items: center; justify-content: center;">
+                                <div class="text-center text-white">
+                                    <i class="fas fa-fire" style="font-size: 5rem; margin-bottom: 1rem;"></i>
+                                    <h5>Salchipapas Crujientes</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
+                                <div class="text-center text-white">
+                                    <i class="fas fa-box" style="font-size: 5rem; margin-bottom: 1rem;"></i>
+                                    <h5>Combos Increíbles</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center;">
+                                <div class="text-center text-white">
+                                    <i class="fas fa-ice-cream" style="font-size: 5rem; margin-bottom: 1rem;"></i>
+                                    <h5>Postres Irresistibles</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCORDION DE PREGUNTAS FRECUENTES -->
+    <section class="faq-section">
+        <div class="container-fluid">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <i class="fas fa-clock"></i> ¿Cuál es nuestro horario de atención?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <strong>Lunes a Viernes:</strong> 11:00 AM - 10:00 PM<br>
+                            <strong>Sábados:</strong> 11:00 AM - 11:00 PM<br>
+                            <strong>Domingos:</strong> 12:00 PM - 10:00 PM<br>
+                            <em>Horario de Delivery: Según disponibilidad</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            <i class="fas fa-shipping-fast"></i> ¿Realizan entregas a domicilio?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sí, realizamos entregas a domicilio en toda la ciudad. El costo del envío varía según la zona. 
+                            Realizamos entregas en un tiempo promedio de 30-45 minutos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            <i class="fas fa-credit-card"></i> ¿Qué métodos de pago aceptan?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Aceptamos: Efectivo, Nequi, Daviplata, Transferencia bancaria, Tarjetas de crédito/débito y 
+                            billeteras digitales. Consulta con nosotros sobre promociones vigentes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            <i class="fas fa-utensils"></i> ¿Tienen opciones vegetarianas?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sí, contamos con opciones vegetarianas adaptadas a tu gusto. Puedes personalizar cualquier 
+                            producto solicitando cambios en los ingredientes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            <i class="fas fa-calendar"></i> ¿Realizan eventos o catering?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Claro que sí. Realizamos catering para eventos, fiestas y reuniones empresariales. 
+                            Contacta con nosotros para presupuesto personalizado.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL - MAPA -->
+    <div class="modal fade" id="mapModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-map-marker-alt"></i> Nuestra Ubicación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.737164750301!2d-75.55028!3d6.224566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428b5b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="abrirGoogleMaps()">
+                        <i class="fas fa-external-link-alt"></i> Abrir en Google Maps
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL - FORMULARIO DE CALIFICACIÓN -->
+    <div class="modal fade" id="ratingModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-star"></i> Califica Nuestro Servicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="rating-form">
+                        <p class="text-center mb-3">¿Cómo fue tu experiencia con nosotros?</p>
+                        
+                        <div class="star-rating mb-4">
+                            <i class="far fa-star star" data-value="1"></i>
+                            <i class="far fa-star star" data-value="2"></i>
+                            <i class="far fa-star star" data-value="3"></i>
+                            <i class="far fa-star star" data-value="4"></i>
+                            <i class="far fa-star star" data-value="5"></i>
+                        </div>
+                        
+                        <div class="rating-display mb-3">
+                            <p id="ratingText">Selecciona una calificación</p>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="ratingComment" class="form-label">Comentario (opcional)</label>
+                            <textarea class="form-control" id="ratingComment" rows="3" placeholder="Cuéntanos tu experiencia..."></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="ratingEmail" class="form-label">Tu Correo</label>
+                            <input type="email" class="form-control" id="ratingEmail" placeholder="tu@correo.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="enviarCalificacion()">
+                        <i class="fas fa-paper-plane"></i> Enviar Calificación
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL - POPUP DE SERVICIO -->
+    <div class="modal fade" id="servicePopup" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content modal-popup">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="popup-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h4 class="modal-popup-title">¡Gracias por Elegirnos!</h4>
+                    <p class="modal-popup-text">
+                        En <strong>FoodCart</strong> nos comprometemos a ofrecerte el mejor servicio 
+                        con comida fresca, rápida entrega y atención personalizada. 
+                        ¡Tu satisfacción es nuestra prioridad!
+                    </p>
+                    <div class="popup-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comida Fresca</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Entrega Rápida</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mejor Precio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-dismiss="modal">
+                        <i class="fas fa-check"></i> Perfecto
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573014412498?text=Hola%20Kabanna%2C%20me%20gustaría%20hacer%20un%20pedido" 
+       class="whatsapp-button" 
+       title="Chatea con nosotros" 
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-content">
+                <p>&copy; 2026 Kabanna Fast-Food. Todos los derechos reservados.</p>
+                <p>Síguenos en <a href="#" class="text-naranja">redes sociales</a></p>
+                <button class="btn btn-sm btn-outline-warning" onclick="mostrarModalCalificacion()">
+                    <i class="fas fa-star"></i> Calificanos
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+     <!-- <script src="bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts Personalizados -->
+    <script src="conexion_status.js"></script>
+    <script src="contacto-script.js"></script>
+</body>
+</html>

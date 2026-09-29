@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Kabanna</title>
+    
+    <!-- Bootstrap 5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="menu-styles.css">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!-- <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-burger"></i> Menú
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informacion_interes.html">Información</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container-fluid">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <i class="fas fa-list"></i> Nuestro Menú Completo
+                </h1>
+                <p class="hero-subtitle">Descubre todos nuestros deliciosos productos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTRO DE CATEGORÍAS -->
+    <section class="filter-section">
+        <div class="container-fluid">
+            <div class="filter-buttons">
+                <button class="btn-filter active" data-category="todos">
+                    <i class="fas fa-list"></i> Todos
+                </button>
+                <button class="btn-filter" data-category="hamburguesas">
+                    <i class="fas fa-burger"></i> Hamburguesas
+                </button>
+                <button class="btn-filter" data-category="perros">
+                    <i class="fas fa-hotdog"></i> Perros Calientes
+                </button>
+                <button class="btn-filter" data-category="salchipapas">
+                    <i class="fas fa-fire"></i> Salchipapas
+                </button>
+                <button class="btn-filter" data-category="combos">
+                    <i class="fas fa-box"></i> Combos
+                </button>
+                <button class="btn-filter" data-category="bebidas">
+                    <i class="fas fa-glass-water"></i> Bebidas
+                </button>
+                <button class="btn-filter" data-category="postres">
+                    <i class="fas fa-ice-cream"></i> Postres
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENEDOR DE PRODUCTOS -->
+    <section class="menu-section">
+        <div class="container-fluid">
+            <div class="products-grid" id="productsContainer">
+                <!-- Los productos se cargan aquí mediante JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573014412498?text=Hola%20Kabanna%20FastFood%2C%20me%20gustaría%20hacer%20un%20pedido" 
+       class="whatsapp-button" 
+       title="Chatea con nosotros" 
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-content">
+                <p>&copy; 2024 Kabbana FastFood Online Store. Todos los derechos reservados.</p>
+                <p>Síguenos en <a href="#" class="text-naranja">redes sociales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+     <!-- <script src="bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts Personalizados -->
+    <script src="conexion_status.js"></script>
+    <script src="menu-script.js"></script>
+</body>
+</html>
