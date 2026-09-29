@@ -67,3 +67,8 @@ Cada ID corresponde a un producto con `data-product-id` en [script.js](script.js
 
 ## 6. Añadir más páginas en el futuro
 Si agregas nuevas páginas, puedes incluirlas en `navigationItems` con su respectivo `href` y `icon`.
+
+## 7. Guardar y compartir facturas desde el APK Android
+La web detecta el puente JavaScript `window.Android`. Para guardar automáticamente las facturas, el APK debe exponer el método `saveInvoiceToFolder(carpeta, nombre, base64, tipo)`. Este debe crear la carpeta `Pictures/fact_kabanna` si no existe y guardar allí el JPG recibido. En Android 10 o posterior se recomienda `MediaStore` con `Pictures/fact_kabanna` como `RELATIVE_PATH`; para versiones anteriores se deben gestionar los permisos de almacenamiento correspondientes. El guardado debe devolver `false` si falla. Para compartir, se debe usar el URI de `MediaStore` o un `content://` seguro generado por `FileProvider`, nunca exponer una ruta `file://`.
+
+Para enviar el archivo directamente al WhatsApp configurado, el APK también debe exponer `shareInvoiceToWhatsApp(telefono, mensaje, carpeta, nombre)`. Debe compartir el JPG ya guardado y dirigirlo al teléfono recibido (`573014412498`). Ambos métodos deben estar disponibles en el objeto `Android` del WebView. Sin ese puente, la web descarga el archivo con un nombre único y abre WhatsApp con el mensaje; por las restricciones del navegador no puede crear carpetas del teléfono ni adjuntar el JPG automáticamente.

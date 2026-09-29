@@ -341,7 +341,7 @@ function openCheckout() {
 async function downloadInvoice() {
   const invoiceElement = document.getElementById('invoice-preview');
   if (invoiceHelper) {
-    await invoiceHelper.downloadAndShareInvoice(invoiceElement, invoiceTotal.textContent);
+    await invoiceHelper.downloadInvoice(invoiceElement);
     return;
   }
 
@@ -356,7 +356,7 @@ async function downloadInvoice() {
 function shareInvoice() {
   const invoiceElement = document.getElementById('invoice-preview');
   if (invoiceHelper) {
-    invoiceHelper.downloadAndShareInvoice(invoiceElement, invoiceTotal.textContent);
+    invoiceHelper.shareInvoice(invoiceElement, invoiceTotal.textContent);
     return;
   }
 
