@@ -3,7 +3,7 @@
   const promoProduct = {
     id: 1,
     name: "Hamburguesa Sencilla con Queso",
-    image: "pictures/hamburguesa_sencilla.png",
+    image: "https://res.cloudinary.com/isgp8bkp/image/upload/v1791057625/hamburguesa_sencilla.png",
     imageDescription: "Hamburguesa con queso fundido"
   };
 
