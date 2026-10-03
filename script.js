@@ -1,6 +1,6 @@
 const products = [
-  { id: 1, name: 'Hamburguesa Sencilla', description: 'Carne Deli, queso, lechuga y salsa especial.', price: 10000, category: 'hamburguesas', image: 'pictures/hamburguesa_sencilla.png' },
-  { id: 2, name: 'Hamburguesa Doble Carne Sencilla', description: 'Dos carnes tipo Deli, Vegetales, adheresos  y Mozarela.', price: 15000, category: 'hamburguesas', image: 'pictures/hamburguesa_doblecarne_sencilla.png' },
+  { id: 1, name: 'Hamburguesa Sencilla', description: 'Carne Deli, queso, lechuga y salsa especial.', price: 10000, category: 'hamburguesas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791057625/hamburguesa_sencilla.png' },
+  { id: 2, name: 'Hamburguesa Doble Carne Sencilla', description: 'Dos carnes tipo Deli, Vegetales, adheresos  y Mozarela.', price: 15000, category: 'hamburguesas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791059910/hamburguesa_doblecarne_sencilla.png' },
   { id: 3, name: 'Hamburguesa Artesanal', description: 'Una Carne Artesanal de Cerdo o res, Tocineta crujiente, Vegetales, Mozarela y Super salsa deep especial.', price: 15000, category: 'hamburguesas', image: 'pictures/hamburguesa_artesanal.png' },
   { id: 4, name: 'Hamburguesa Artesanal Doble Carne', description: 'Dos carnes artesanales de Res o Cerdo, Tocineta crujiente, Vegetales, Mozarela y Super salsa deep especial.', price: 19000, category: 'hamburguesas', image: 'pictures/hamburguesa_artesanal_doblecarne.png' },
   //picada personal de 15k
