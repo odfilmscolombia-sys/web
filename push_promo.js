@@ -1,9 +1,9 @@
 (() => {
   const promoKey = "kabanna-cheese-burger-promo-seen";
   const promoProduct = {
-    id: 1,
-    name: "Hamburguesa Sencilla con Queso",
-    image: "https://res.cloudinary.com/isgp8bkp/image/upload/v1791057625/hamburguesa_sencilla.png",
+    id: 10,
+    name: "Picada Desgranada Familiar de $45.000",
+    image: "https://res.cloudinary.com/isgp8bkp/image/upload/v1791093331/picada_mixta_familiar_de_40k.png",
     imageDescription: "Hamburguesa con queso fundido"
   };
 
@@ -28,7 +28,7 @@
         </div>
         <div class="modal-body pt-3">
           <img src="${promoProduct.image}" class="w-100 rounded-3" alt="${promoProduct.imageDescription}" style="height: 190px; object-fit: cover;" />
-          <p class="text-muted mt-3 mb-0">Carne a la parrilla, queso fundido y todo el sabor de Kabanna. ¡Ven a probarla!</p>
+          <p class="text-muted mt-3 mb-0">Picada de tamaño familiar en promoción!</p>
         </div>
         <div class="modal-footer border-0 pt-0">
           <button type="button" class="btn btn-orange w-100" data-bs-dismiss="modal">Cerrar</button>

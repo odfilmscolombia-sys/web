@@ -8,7 +8,7 @@ const productos = [
         categoria: 'hamburguesas',
         precio: 10000,
         descripcion: 'Hamburguesa con carne, lechuga y tomate',
-        icono: 'pictures/hamburguesa_sencilla.png'
+        icono: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791057625/hamburguesa_sencilla.png'
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const productos = [
         categoria: 'hamburguesas',
         precio: 15000,
         descripcion: 'Dos carnes, queso y salsas especiales',
-        icono: 'pictures/hamburguesa_doblecarne_sencilla.png'
+        icono: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791059910/hamburguesa_doblecarne_sencilla.png'
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const productos = [
         categoria: 'hamburguesas',
         precio: 12000,
         descripcion: 'Con bacon crujiente y queso derretido',
-        icono: 'pictures/hamburguesa_sencilla.png'
+        icono: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791089864/hamburguesa_artesanal.png'
     },
     {
         id: 4,

@@ -1,38 +1,39 @@
 const products = [
   { id: 1, name: 'Hamburguesa Sencilla', description: 'Carne Deli, queso, lechuga y salsa especial.', price: 10000, category: 'hamburguesas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791057625/hamburguesa_sencilla.png' },
   { id: 2, name: 'Hamburguesa Doble Carne Sencilla', description: 'Dos carnes tipo Deli, Vegetales, adheresos  y Mozarela.', price: 15000, category: 'hamburguesas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791059910/hamburguesa_doblecarne_sencilla.png' },
-  { id: 3, name: 'Hamburguesa Artesanal', description: 'Una Carne Artesanal de Cerdo o res, Tocineta crujiente, Vegetales, Mozarela y Super salsa deep especial.', price: 15000, category: 'hamburguesas', image: 'pictures/hamburguesa_artesanal.png' },
-  { id: 4, name: 'Hamburguesa Artesanal Doble Carne', description: 'Dos carnes artesanales de Res o Cerdo, Tocineta crujiente, Vegetales, Mozarela y Super salsa deep especial.', price: 19000, category: 'hamburguesas', image: 'pictures/hamburguesa_artesanal_doblecarne.png' },
+  { id: 3, name: 'Hamburguesa Artesanal', description: 'Una Carne Artesanal de Cerdo o res, Tocineta crujiente, Vegetales, Mozarela y Super salsa deep especial.', price: 15000, category: 'hamburguesas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791089864/hamburguesa_artesanal.png' },
+  { id: 4, name: 'Hamburguesa Artesanal Doble Carne', description: 'Dos carnes artesanales de Res o Cerdo, Tocineta crujiente, Vegetales, Mozarela y Super salsa deep especial.', price: 19000, category: 'hamburguesas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791090004/hamburguesa_artesanal_doblecarne.png' },
   //picada personal de 15k
-  { id: 5, name: 'Picada Personal de $15.000', description: 'Picada para una persona sencilla mixta con carne, vegetales, queso y salsas.', price: 15000, category: 'picadas', image: 'pictures/picada_personal_de_15k.png' },
+  { id: 5, name: 'Picada Personal de $15.000', description: 'Picada para una persona sencilla mixta con carne, vegetales, queso y salsas.', price: 15000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791090720/picada_personal_de_15k.png' },
   //picada personal de 18k
-  { id: 6, name: 'Picada Personal Con Desmechada $19.000', description: 'Picada con adicional de carne desmechada de cerdo o res, salsas , virutas de papa, queso costeño y vegetales.', price: 18000, category: 'picadas', image: 'pictures/nuevas/picada_personal_de18k.png' },
+  { id: 6, name: 'Picada Personal Con Desmechada $19.000', description: 'Picada con adicional de carne desmechada de cerdo o res, salsas , virutas de papa, queso costeño y vegetales.', price: 18000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791091568/picada_personal_de18k.png' },
   //Picada Mixta de Pechuga de $35k
-  { id: 7, name: 'Picada Mixta de Pechuga de $35k (Para 2 o 3 Personas)', description: 'Picada con tiras de pechuga, chorizo artesanal al carbón, maíz tierno, salsas especiales, queso costeño y vegetales. ', price: 30000, category: 'picadas', image: 'pictures/nuevas/picada_mixta_pechuga_30K.png' },
+  { id: 7, name: 'Picada Mixta de Pechuga de $35k (Para 2 o 3 Personas)', description: 'Picada con tiras de pechuga, chorizo artesanal al carbón, maíz tierno, salsas especiales, queso costeño y vegetales. ', price: 35000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791092398/picada_mixta_pechuga_30k.png' },
   //Picada Carbón de $20k 
-  { id: 8, name: 'Picada Carbón de $20k (Para 1 persona)', description: 'Picada para una persona Con desgranado, chorizo al carbón, carnes y vegetales.', price: 22000, category: 'picadas', image: 'pictures/nuevas/picada_mixta_carbon_de_20k.png' },
+  { id: 8, name: 'Picada Carbón de $20k (Para 1 persona)', description: 'Picada para una persona Con desgranado, chorizo al carbón, carnes y vegetales.', price: 20000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791092452/picada_mixta_carbon_de_20k.png' },
   //Picada Desgranada de $27.000
-  { id: 9, name: 'Picada Desgranada de $27.000 (Para dos personas)', description: 'Salchipapas, arepa, aguacate y vegetales.', price: 22000, category: 'picadas', image: 'pictures/nuevas/picada_mixta_27k.png' },
+  { id: 9, name: 'Picada Desgranada de $27.000 (Para dos personas)', description: 'Salchipapas, arepa, aguacate y vegetales.', price: 27000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791092598/picada_mixta_27k.png' },
   //Picada Familiar de $40k
-  { id: 10, name: 'Picada Familiar de $40k', description: 'Picada mixta con todo, maíz tierno, queso costeño, vegetales, pépinillos, salsas y papita triturada.', price: 40000, category: 'picadas', image: 'pictures/nuevas/picada_mixta_familiar_de_40k.png' },
+  { id: 10, name: 'Picada Familiar de $40k', description: 'Picada mixta con todo, maíz tierno, queso costeño, vegetales, pépinillos, salsas y papita triturada.', price: 40000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791093331/picada_mixta_familiar_de_40k.png' },
   //Picada Desgranada Familiar de $45K
-  { id: 11, name: 'Picada Desgranada Familiar de $45K (Para 3 o 4 personas)', description: 'Picada mixta con desgranado, carnes y chorizos artesanal al carbón y mucho queso mozzarella.', price: 45000, category: 'picadas', image: 'pictures/nuevas/desgranado_mixto_45k.png' },
+  { id: 11, name: 'Picada Desgranada Familiar de $45K (Para 3 o 4 personas)', description: 'Picada mixta con desgranado, carnes y chorizos artesanal al carbón y mucho queso mozzarella.', price: 45000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791093331/picada_mixta_familiar_de_40k.png' },
   //Picada Familiar de $50k
-  { id: 12, name: 'Picada Familiar de 50k (Para 4 o 5 personas)', description: 'Picada mixta con todo, maíz tierno, queso costeño, vegetales, pépinillos, salsas y papita triturada.', price: 50000, category: 'picadas', image: 'pictures/nuevas/picada_familiar_de_50k.png' },
+  { id: 12, name: 'Picada Familiar de 50k (Para 4 o 5 personas)', description: 'Picada mixta con todo, maíz tierno, queso costeño, vegetales, pépinillos, salsas y papita triturada.', price: 50000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791116902/picada_familiar_de_50k.png' },
   //Picada Familiar de $60k
-  { id: 13, name: 'Picada Familiar de 60k (Para 5 o 6 personas)', description: 'Salchipapas, arepa, aguacate y vegetales.', price: 60000, category: 'picadas', image: 'pictures/nuevas/picada_familiar_de_60k.png' },
+  { id: 13, name: 'Picada Familiar de 60k (Para 5 o 6 personas)', description: 'Salchipapas, arepa, aguacate y vegetales.', price: 60000, category:'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791116967/picada_familiar_de_60k.png' },
   //Picada Veggie
-  { id: 14, name: 'Picada Veggie', description: 'Papas Fritas o al vapor, Vegetales, Salchicha al vapor, Cebolla Blanca y Queso.', price: 20000, category: 'picadas', image: 'pictures/nuevas/picada_veggie_de_20k.png' },
+  { id: 14, name: 'Picada Veggie', description: 'Papas Fritas o al vapor, Vegetales, Salchicha al vapor, Cebolla Blanca y Queso.', price: 20000, category: 'picadas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791117033/picada_veggie_de_20k.png' },
 
-  { id: 15, name: 'Coca Cola', description: 'Bebida gaseosa clásica de PET 400 ml.', price: 4000, category: 'bebidas', image: 'pictures/cocacola_pet_400.png' },
+
+  { id: 15, name: 'Coca Cola', description: 'Bebida gaseosa clásica de PET 400 ml.', price: 4000, category: 'bebidas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791427582/coca_1.5.png' },
   //Gaseosa coca-cola 1.5 litros
-  { id: 16, name: 'Coca-Cola Litro y Medio', description: 'Coca-Cola de 1.5 litros.', price: 8000, category: 'bebidas', image: 'pictures/coca_1.5.png' },
+  { id: 16, name: 'Coca-Cola Litro y Medio', description: 'Coca-Cola de 1.5 litros.', price: 8000, category: 'bebidas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791427582/coca_1.5.png' },
   //Gaseosa coca-Cola 2 Litros y Medio
-  { id: 17, name: 'Coca-Cola 2 Litros y Medio', description: 'Bebida gaseosa de naranja.', price: 11000, category: 'bebidas', image: 'pictures/coca_3l.png' },
-
-  { id: 18, name: 'Pepsi', description: 'Pepsi 1.5 litros', price: 6000, category: 'bebidas', image: 'pictures/pepsi.jpg' },
-
-  { id: 19, name: 'Postobon 1.5', description: 'Gaseosa postobon de 1.5 litros, sabores: Manzana, Naranja, Uva o Colombiana.', price: 6000, category: 'bebidas', image: 'pictures/gaseosas_postobon.jpg' },
+  { id: 17, name: 'Coca-Cola 3 litros', description: 'Bebida gaseosa.', price: 11000, category: 'bebidas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791429381/coca_3l.png' },
+  //Gaseosa Pepsi 1.5 Litros
+  { id: 18, name: 'Pepsi', description: 'Pepsi 1.5 litros', price: 6000, category: 'bebidas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791429487/pepsi.jpg' },
+  //Gaseosa Postobon 1.5 Litros
+  { id: 19, name: 'Postobon 1.5', description: 'Gaseosa postobon de 1.5 litros, sabores: Manzana, Naranja, Uva o Colombiana.', price: 6000, category: 'bebidas', image: 'https://res.cloudinary.com/isgp8bkp/image/upload/v1791429533/gaseosas_postobon.jpg' },
 
   { id: 20, name: 'Pollo Crispy', description: 'Pechuga crocante con papas y ensalada.', price: 24000, category: 'comidas', image: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=800&q=80' },
 
@@ -45,7 +46,7 @@ const products = [
   { id: 24, name: 'Wrap de Carne', description: 'Wrap con carne, tomate y aderezo.', price: 23000, category: 'comidas', image: 'https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=800&q=80' },
   { id: 25, name: 'Combo Clásico', description: 'Picada + bebida + Hamburguesa. (Ahorras $2.000)', price: 27000, category: 'combos', image: 'pictures/nuevas/combo_clasico.png' },
   { id: 26, name: 'Combo Duo Dínamico', description: '2 hamburguesas Res Carbón, 2 bebidas y 2 papas. (Ahorras $4.000)', price: 34000, category: 'combos', image: 'pictures/nuevas/combo_duo_dinamico.png' },
-  { id: 27, name: 'Combo Picada', description: 'Picada grande + 2 gaseosas.', price: 42000, category: 'combos', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80' },
+  { id: 27, name: 'Combo Picada para 2', description: 'Picada grande + 2 gaseosas.', price: 42000, category: 'combos', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80' },
   { id: 28, name: 'Combo Pollo', description: 'Pollo crispy + bebida + papas.', price: 31000, category: 'combos', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80' },
   { id: 29, name: 'Combo Veggie', description: 'Wrap veggie + bebida + papas.', price: 29000, category: 'combos', image: 'https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80' },
   { id: 30, name: 'Choripan Sencillo', description: 'Wrap veggie + bebida + papas.', price: 7000, category: 'hotdogs', image: 'https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80' },
@@ -54,10 +55,15 @@ const products = [
 ];
 
 const extraOptions = [
-  { id: 'queso', name: 'Queso Mozarela', price: 3000 },
-  { id: 'papitas', name: 'Papitas fritas', price: 3000 },
+  { id: 'queso', name: 'Queso Mozarela', price: 2000 },
+  { id: 'papitas', name: 'Papitas fritas x 1', price: 3000 },
+  { id: 'papitas_2', name: 'Papitas fritas x 2', price: 5000 },
   { id: 'aguacate', name: 'Aguacate', price: 2000 },
-  { id: 'huevo', name: 'Huevo', price: 1500 }
+  { id: 'deep', name: 'Deep con cebolla', price: 2000 },
+  { id: 'huevo', name: 'Huevo Frito', price: 1500 },
+  { id: 'tocineta', name: 'Tocineta', price: 1000 },
+  { id: 'salsa', name: 'Salsa Especial', price: 1000 },
+
 ];
 
 const categories = ['all', 'hamburguesas', 'picadas', 'bebidas', 'comidas', 'combos', 'hotdogs','postres'];
